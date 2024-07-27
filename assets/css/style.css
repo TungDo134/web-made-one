@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
 }
 #header {
@@ -501,7 +502,9 @@ p {
   border-color: #fff;
 }
 .footer {
-  height: 688px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
   background-color: #222222;
   padding-top: 80px;
 }
@@ -512,10 +515,18 @@ p {
   margin-bottom: 10px;
 }
 .footer-1 .p1 {
+  margin-left: 32px;
   max-width: 212px;
-  /* max-height: 84px; */
   color: #797979;
   font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-1 .p1-header {
+  max-width: 212px;
+  color: #797979;
+  font-size: 15px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -526,7 +537,94 @@ h6 {
   margin-bottom: 10px;
 }
 
-h6 .ti-location-pin {
+h6 > i {
   margin-right: 20px;
   color: #797979;
+}
+
+/* Footer 2 */
+.footer-2 img {
+  margin-right: 15px;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-2 .p1 {
+  color: #fff;
+}
+
+.footer-2 {
+  width: 212px;
+  max-height: 300px;
+}
+
+.footer-2 .photo,
+.footer-2 .coffee,
+.footer-2 .chair {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.footer-2 .photo-des {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #797979;
+}
+
+.footer-2 .photo-des:hover {
+  color: #fff;
+}
+
+.footer-2 a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #797979;
+}
+
+/* Footer 3 */
+
+.footer-3 a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 15px;
+  /* font-weight: 500px; */
+}
+.footer-3 .ti-arrow-right {
+  color: #fff;
+  font-size: 10px;
+  padding-right: 10px;
+}
+.footer-3 li {
+  margin-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #aaa;
+  list-style-type: none;
+}
+
+/* Footer 4 */
+.footer-4 .form-email {
+  border: 1px solid;
+  width: 80%;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-color: #333333;
+  display: inline-block;
+}
+
+.footer-4 .btn-send-email {
+  width: 80%;
+  margin-left: 2px;
+  margin-top: 10px;
+  border-radius: 3%;
+  padding: 13px 15px;
+  background-color: #00a885;
+  border: 1px solid;
+  border-color: #00a885;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+.footer-4 .btn-send-email:hover {
+  background-color: #fff;
+  color: #00a885;
 }
